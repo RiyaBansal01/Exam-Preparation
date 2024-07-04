@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Subjects */
+.subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Subject */
+.subject {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.subject:hover {
+    transform: scale(1.05);
+}
+
+.subject h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.subject h3 {
+    margin-top: 20px;
+    color: #555;
+}
+
+.subject a {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.subject a:hover {
+    color: #007BFF;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Footer text animation */
+.created-by {
+    display: inline-block;
+    position: relative;
+    animation: slideInFooter 1s ease-in-out;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+@keyframes slideInFooter {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
